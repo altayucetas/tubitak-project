@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e00ffa44-b28e-4482-b487-401f59396886" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/altay/yucetas/application/CoffeeMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/altay/yucetas/application/CoffeeMachine.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

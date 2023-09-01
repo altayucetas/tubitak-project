@@ -2,8 +2,121 @@ package altay.yucetas.application;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Scanner;
 
 public class CoffeeMachine {
+    private final CoffeeMenu myMenu = new CoffeeMenu();
+    public CoffeeMachine(){
+        System.out.println("Merhaba, kahve makinesine hoş geldiniz. Menü ve fiyatlar aşağıda görüldüğü gibidir.");
+        System.out.println(myMenu);
+    }
+
+    public String printMenu(){
+        return myMenu.toString();
+    }
+
+    public void accessAPI(int devID){
+        if(devID == 612546903){
+            Scanner getDevInp = new Scanner(System.in);
+            int devProcess;
+            String opening = """
+                    Geliştirici menüsüne hoş geldiniz.
+                    1. Kahve Ekleme
+                    2. Kahve Çıkarma
+                    3. Çıkış
+                    Lütfen yapmak istediğiniz işlemi seçiniz:\s""";
+
+            System.out.print(opening);
+
+            devProcess = Integer.parseInt(getDevInp.nextLine());
+
+            if(devProcess == 1){
+                int addedNum;
+                String coffeeName;
+                int coffeePrice;
+                String coffeeRecipe;
+
+                System.out.print("Kaç adet kahve eklemek istiyorsunuz: ");
+                addedNum = Integer.parseInt(getDevInp.nextLine());
+
+                for(int i=0; i<addedNum; i++){
+                    System.out.print("Lütfen " + (i+1) + ". kahvenin adını giriniz: ");
+                    coffeeName = getDevInp.nextLine();
+
+                    System.out.print("Lütfen " + (i+1) + ". kahvenin fiyatını giriniz: ");
+                    coffeePrice = Integer.parseInt(getDevInp.nextLine());
+
+                    System.out.print("Lütfen " + (i+1) + ". kahvenin tarifini giriniz: ");
+                    coffeeRecipe = getDevInp.nextLine();
+
+                    myMenu.addCoffee(coffeeName, coffeePrice, coffeeRecipe);
+                }
+
+                System.out.println("Kahveler başarı ile eklenmiştir.");
+                System.out.println(this.printMenu());
+            }
+            else if (devProcess == 2) {
+                int deletedNum;
+                String coffeeName;
+
+                System.out.print("Kaç adet kahve silmek istiyorsunuz: ");
+                deletedNum = Integer.parseInt(getDevInp.nextLine());
+
+                for(int i=0; i<deletedNum; i++){
+                    System.out.print("Lütfen " + (i+1) + ". kahvenin adını giriniz: ");
+                    coffeeName = getDevInp.nextLine();
+
+                    myMenu.deleteCoffee(coffeeName);
+                }
+
+                System.out.println("Kahveler başarı ile silinmiştir.");
+                System.out.println(this.printMenu());
+
+            }
+            else{
+                System.out.println("Çıkış yapılıyor.");
+            }
+        }
+        else{
+            System.out.println("Lütfen geçerli bir kullanıcı kimlik numarası giriniz!");
+        }
+    }
+    public String getCoffeeInfo(int selectedNum){
+        StringBuilder machineAnswer = new StringBuilder();
+
+        if(selectedNum < 1 || selectedNum > myMenu.getMenuSize()){
+            machineAnswer.append("Lütfen geçerli bir kahve numarası giriniz!");
+        }
+        else{
+            Coffee myCoffee = myMenu.getCoffee(selectedNum-1);
+            HashMap<String, Integer> myMix = myCoffee.getRecipe();
+            int mixNum = 0;
+
+            System.out.println("Teşekkürler, kahveniz hazırlanıyor.");
+            try{
+                Thread.sleep(2000);
+            }
+            catch(InterruptedException ex)
+            {
+                Thread.currentThread().interrupt();
+            }
+            machineAnswer.append(myCoffee.getName()).append(" seçtiniz. Bu içeceğimiz ");
+
+            for (String ingre: myMix.keySet()) {
+                mixNum++;
+                machineAnswer.append(myMix.get(ingre)).append(" doz ").append(ingre);
+
+                if(mixNum == myMix.size()-1){
+                    machineAnswer.append(" ve ");
+                }
+                else if (mixNum != myMix.size()){
+                    machineAnswer.append(", ");
+                }
+            }
+            machineAnswer.append(" içermektedir. Afiyet olsun.");
+        }
+        return machineAnswer.toString();
+    }
 }
 
 class CoffeeMenu{
