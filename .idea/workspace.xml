@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e00ffa44-b28e-4482-b487-401f59396886" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/altay/yucetas/application/CoffeeMachineTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/altay/yucetas/application/CoffeeMenuTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/altay/yucetas/application/CoffeeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CoffeeApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CoffeeApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/altay/yucetas/application/CoffeeMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/altay/yucetas/application/CoffeeMachine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoffeeApplication.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CoffeeApplication.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -29,21 +35,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Altay/MyApp/CoffeeApplication&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Altay/MyApp/CoffeeApplication/src/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "git-widget-placeholder": "master",
+    "last_directory_selection": "C:/Users/Altay/MyApp/CoffeeApplication/src/test/java/altay/yucetas/application",
+    "last_opened_file_path": "C:/Users/Altay/MyApp/CoffeeApplication",
+    "onboarding.tips.debug.path": "C:/Users/Altay/MyApp/CoffeeApplication/src/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Altay\MyApp\CoffeeApplication\src\main\java" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="altay.yucetas.application" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
