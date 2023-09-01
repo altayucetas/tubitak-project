@@ -1,17 +1,25 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import altay.yucetas.application.CoffeeMachine;
+import java.util.Scanner;
+
+
 public class CoffeeApp {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        Scanner getInp = new Scanner(System.in);
+        CoffeeMachine myMach = new CoffeeMachine();
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
+        System.out.print("Lütfen içmek istediğiniz kahvenin numarasını giriniz: ");
+        int coffeeNum = Integer.parseInt(getInp.nextLine());
+
+        if(coffeeNum > 10000){
+            myMach.accessAPI(coffeeNum);
+            System.out.print("Lütfen içmek istediğiniz kahvenin numarasını giriniz: ");
+            coffeeNum = Integer.parseInt(getInp.nextLine());
         }
+
+        System.out.println(myMach.getCoffeeInfo(coffeeNum));
+
+
+
     }
 }
