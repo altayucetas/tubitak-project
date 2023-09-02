@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e00ffa44-b28e-4482-b487-401f59396886" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/altay/yucetas/application/CoffeeMachineTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/altay/yucetas/application/CoffeeMenuTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/altay/yucetas/application/CoffeeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoffeeApplication.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CoffeeApplication.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +42,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "create.test.in.the.same.root": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "last_directory_selection": "C:/Users/Altay/MyApp/CoffeeApplication/src/test/java/altay/yucetas/application",
     "last_opened_file_path": "C:/Users/Altay/MyApp/CoffeeApplication",
     "onboarding.tips.debug.path": "C:/Users/Altay/MyApp/CoffeeApplication/src/Main.java",
